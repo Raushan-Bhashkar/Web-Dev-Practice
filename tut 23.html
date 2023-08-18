@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar {
+            background-color: grey;
+            border-radius: 2px;
+        }
+
+        .navbar li {
+            float: left;
+            /* bcz of this backgoung color overflow and not seen there so target navbar ul and use overflow:auto */
+            list-style: none;
+            /* to remove the bullets we use list style : none */
+            margin: 13px 22px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar ul a {
+            padding: 2px 2px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar ul a:hover{
+            background-color: black;
+        }
+
+        .search {
+            float: right;               
+            color: white;
+            padding: 12px 75px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> About </a></li>
+                <li><a href="#"> Service </a></li>
+                <li><a href="#"> Contact Us </a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search the website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

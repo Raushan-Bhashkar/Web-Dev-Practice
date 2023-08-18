@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: auto;
+            border: 3px solid rebeccapurple;
+            margin: 34px;
+        }
+
+        .items {
+            border: 2px solid red;
+            background-color: aqua;
+            /* margin: 15px; */
+            padding: 14px;
+            width: 540;
+
+        }
+
+        #fruit {
+            float: left;
+            width: 50%;
+            /* clear: both; */
+        }
+
+        .clr {
+            content: "";
+            /* clear: right; */
+        }
+
+        #computer {
+            float: right;
+            width: 50%;
+            /* clear: both; */
+        }
+
+        #stationary {
+            /* clear: both; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="fruit" class="items">
+            <h3> Fruits </h3>
+            <p id="fruitpara" class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae alias ipsam
+                vel iste nihil reprehenderit enim hic cupiditate, illum ex exercitationem iure animi cumque veniam earum
+                voluptate sint voluptas totam!</p>
+        </div>
+        <div id="computer" class="items">
+            <h3> Computer </h3>
+            <p id="computerpara" class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae alias
+                ipsam vel iste nihil reprehenderit enim hic cupiditate, illum ex exercitationem iure animi cumque veniam
+                earum voluptate sint voluptas totam!</p>
+        </div>
+        <div id="stationary" class="items">
+            <h3> Stationary </h3>
+            <p id="stationaryspara" class="para"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae alias
+                ipsam vel iste nihil reprehenderit enim hic cupiditate, illum ex exercitationem iure animi cumque veniam
+                earum voluptate sint voluptas totam!</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors and designing</title>
+    <style>
+        .container {
+
+            border: 2px solid red;
+            background-color: antiquewhite;
+            padding: 34px;
+            width: 666px;
+        }
+
+        a {
+            text-decoration: none;
+            /* to remove the underline in the read more */
+            color: black;
+        }
+
+        a:hover {
+            /*  at that time when you put cursor there */
+            color: red;
+            background-color: white;
+        }
+
+        a:visited {
+            background-color: yellow;
+
+        }
+
+        a:active {
+            background-color: blue;
+        }
+
+        .btn {
+            background-color: crimson;
+            font-weight: bold;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 13px;
+            border-radius: 4px;
+        }
+        btn:hover{
+            color: aqua;
+            background-color: pink;
+        }
+    </style> 
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h1> This is my heading</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi corporis excepturi dolore facilis incidunt
+            fugit laboriosam perspiciatis, veniam velit eos, itaque quo enim amet? Necessitatibus ea ipsum error nihil
+            deserunt.</p>
+        <a href="www.google.com" class="btn">Read More </a>
+        <button class="btn"> Contact Us </button>
+    </div>
+</body>
